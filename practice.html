@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var fruits = ["apple", "banana", "coconut"];
+    var i = 0;
+    while (i < fruits.length) { 
+  var inum = i + 1; 
+  document.write(inum + '. ' + fruits[i]+'<br>');
+  i = i + 1;
+} 
+var countries = {
+  "asia": "korea",
+  "europe": "england"
+};
+// document.write(countries.asia+"<br>");
+// //추가
+// countries.africa= "moroco";
+// document.write(countries.africa+'<br>');
+
+// //iterate
+// for(key in countries){
+//   document.write(key+'<br>');
+//   document.write(countries[key]+'<br>');
+// }
+var countries = {
+  "asia": "korea",
+  "europe": "england",
+  "africa": "moroco"
+};
+countries.printAsia = function(){
+  for(key in this){
+    if(key === 'asia'){
+  document.write(key);
+}
+}
+}
+countries.printAsia();
+  </script>
+</body>
+</html>
+
+
